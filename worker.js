@@ -3598,28 +3598,14 @@ const HTML_TEMPLATES = {
 					⚡️ Z E U S
 					<span id="panel-version" class="text-xs px-2 py-0.5 font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 rounded-full"></span>
 				</h1>
-				<div class="flex items-center gap-3 bg-gray-100 dark:bg-zinc-800/60 px-3 py-1.5 rounded-full border border-gray-200 dark:border-zinc-800/80 shadow-sm flex-shrink-0 w-fit">
-					<a href="https://github.com/panel-zeus/Z-E-U-S" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="GitHub">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-						</svg>
-					</a>
-					<a href="https://t.me/PANEL_ZEUS" target="_blank" rel="noopener noreferrer" class="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="Telegram">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.94-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .24z"/>
-						</svg>
-					</a>
-					<a href="https://t.me/ZEUS_PANEL_BOT" target="_blank" rel="noopener noreferrer" class="text-green-500 hover:text-green-600 dark:hover:text-green-400 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="Bot">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M12 8V4H8"/>
-							<rect width="16" height="12" x="4" y="8" rx="2"/>
-							<path d="M2 14h2"/>
-							<path d="M20 14h2"/>
-							<path d="M15 13v2"/>
-							<path d="M9 13v2"/>
-						</svg>
-					</a>
-				</div>
+				<div class="flex items-center gap-3 bg-gray-100 dark:bg-zinc-800/60 px-3 py-1.5 rounded-full border border-gray-200 dark:border-zinc-800/80 shadow-sm flex-shrink-0 w-fit">
+					<a href="https://wa.me/971557256658" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#25D366] text-white shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105 font-bold text-sm">
+						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M12.04 2C6.57 2 2.12 6.35 2.12 11.7c0 1.9.57 3.76 1.64 5.35L2 22l5.18-1.62a9.8 9.8 0 0 0 4.86 1.23h.01c5.47 0 9.92-4.35 9.92-9.7C21.97 6.35 17.52 2 12.04 2Zm5.72 13.73c-.24.68-1.4 1.28-1.92 1.34-.49.06-1.1.09-1.77-.11-.41-.13-.94-.3-1.62-.59-2.85-1.23-4.72-4.1-4.86-4.3-.14-.2-1.16-1.55-1.16-2.96s.74-2.1 1-2.39c.24-.29.52-.36.7-.36h.5c.16 0 .37-.06.58.44.22.53.74 1.83.8 1.96.07.13.1.29.02.48-.08.2-.12.33-.25.5-.12.16-.26.36-.37.48-.12.12-.24.26-.1.52.14.26.62 1.05 1.33 1.69.92.82 1.69 1.08 1.95 1.2.26.12.41.1.57-.06.16-.16.7-.8.89-1.06.19-.26.39-.22.65-.13.26.1 1.66.8 1.94.94.29.14.48.2.55.31.06.12.06.69-.18 1.36Z"/>
+						</svg>
+						<span>پشتیبانی +971557256658</span>
+					</a>
+				</div>
 			</div>
 			<div class="flex items-center justify-center gap-3 w-full md:w-auto mt-2 md:mt-0">
 				<button onclick="toggleSupportModal(true)" 
@@ -3939,9 +3925,9 @@ const HTML_TEMPLATES = {
 		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900/30 text-red-500 mb-4 shadow-inner">
 			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 		</div>
-		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">🚨 🛑 اخطار 🛑 🚨</h3>
-		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">
-پنل شخصی MJ است و بس.		</p>
+		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">اطلاع</h3>
+		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">
+پنل شخصی MJ است. برای پشتیبانی، لطفاً در واتساپ پیام بدهید.		</p>
 		<button onclick="closeFreePanelWarning()" class="w-full py-3.5 bg-transparent border-2 border-green-800 text-green-900 hover:bg-green-800 hover:text-white dark:border-green-800 dark:text-green-700 dark:hover:bg-green-900 dark:hover:text-white font-black rounded-md text-sm transition duration-300 shadow-lg">
 			تأیید و موافقت
 		</button>
