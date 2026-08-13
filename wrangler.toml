@@ -1,3 +1,6 @@
 name = "mjpanel2test"
 main = "Source.js"
 compatibility_date = "2026-08-13"
+
+[[d1_databases]]
+binding = "DB"
