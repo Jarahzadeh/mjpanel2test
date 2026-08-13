@@ -3602,23 +3602,24 @@ const HTML_TEMPLATES = {
 						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 							<path d="M12.04 2C6.57 2 2.12 6.35 2.12 11.7c0 1.9.57 3.76 1.64 5.35L2 22l5.18-1.62a9.8 9.8 0 0 0 4.86 1.23h.01c5.47 0 9.92-4.35 9.92-9.7C21.97 6.35 17.52 2 12.04 2Zm5.72 13.73c-.24.68-1.4 1.28-1.92 1.34-.49.06-1.1.09-1.77-.11-.41-.13-.94-.3-1.62-.59-2.85-1.23-4.72-4.1-4.86-4.3-.14-.2-1.16-1.55-1.16-2.96s.74-2.1 1-2.39c.24-.29.52-.36.7-.36h.5c.16 0 .37-.06.58.44.22.53.74 1.83.8 1.96.07.13.1.29.02.48-.08.2-.12.33-.25.5-.12.16-.26.36-.37.48-.12.12-.24.26-.1.52.14.26.62 1.05 1.33 1.69.92.82 1.69 1.08 1.95 1.2.26.12.41.1.57-.06.16-.16.7-.8.89-1.06.19-.26.39-.22.65-.13.26.1 1.66.8 1.94.94.29.14.48.2.55.31.06.12.06.69-.18 1.36Z"/>
 						</svg>
-						<span>پشتیبانی +971557256658</span>
+						<span>پیام در واتساپ</span>
 					</a>
 				</div>
 			</div>
 			<div class="flex items-center justify-center gap-3 w-full md:w-auto mt-2 md:mt-0">
-				<button onclick="toggleSupportModal(true)" 
-						class="p-2 rounded-md 
-							   bg-red-50 dark:bg-red-950/30 
-							   border border-red-200 dark:border-red-900 
-							   hover:bg-red-100 dark:hover:bg-red-900/50 
-							   transition-all duration-200 
-							   text-red-600 dark:text-red-400 shadow-sm" 
-						title="سپاس از همراهی شما">
-					<svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+								<a href="https://wa.me/971557256658?text=%D8%B3%D9%84%D8%A7%D9%85%20MJ%2C%20%D9%85%D9%85%D9%86%D9%88%D9%86%20%D8%A7%D8%B2%20%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C%20%D9%88%20%D8%B2%D8%AD%D9%85%D8%A7%D8%AA%D8%AA.%20%D9%81%D9%82%D8%B7%20%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%D9%85%20%D8%AA%D8%B4%DA%A9%D8%B1%20%DA%A9%D9%86%D9%85." target="_blank" rel="noopener noreferrer"
+					class="p-2 rounded-md 
+						   bg-green-50 dark:bg-green-950/30 
+						   border border-green-200 dark:border-green-900 
+						   hover:bg-green-100 dark:hover:bg-green-900/50 
+						   transition-all duration-200 
+						   text-green-600 dark:text-green-400 shadow-sm"
+					title="ارسال پیام تشکر در واتساپ">
+					<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M16.7 13.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 .1-.2-.3-.8-.9-1-1.1-.2-.2-.1-.4 0-.5.1-.1.3-.4.4-.6.1-.2.1-.4.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.3-.6-.6-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.4.7.3 1.3.6 1.7.7.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3z"/>
+						<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"/>
 					</svg>
-				</button>
+				</a>
 				<button onclick="toggleInfoModal(true)" 
 						class="p-2 rounded-md 
 							   bg-purple-50 dark:bg-purple-950/30 
@@ -3885,19 +3886,6 @@ const HTML_TEMPLATES = {
 		</button>
 	</div>
 </div>
-<div id="personal-panel-warning-modal" class="fixed inset-0 z-[85] flex items-center justify-center p-4 bg-black/60  opacity-0 pointer-events-none transition-all duration-300 ease-out">
-	<div class="w-full max-w-md bg-white dark:bg-amoled-card border-4 border-red-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out">
-		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900/30 text-red-500 mb-4 shadow-inner">
-			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-		</div>
-		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">اطلاع</h3>
-		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">
-پنل شخصی MJ است. برای پشتیبانی، لطفاً در واتساپ پیام بدهید.		</p>
-		<button onclick="closePersonalPanelWarning()" class="w-full py-3.5 bg-transparent border-2 border-green-800 text-green-900 hover:bg-green-800 hover:text-white dark:border-green-800 dark:text-green-700 dark:hover:bg-green-900 dark:hover:text-white font-black rounded-md text-sm transition duration-300 shadow-lg">
-			تأیید و موافقت
-		</button>
-	</div>
-</div>
 <div id="global-message-modal" class="fixed inset-0 z-[86] flex items-center justify-center p-4 bg-black/60  opacity-0 pointer-events-none transition-all duration-300 ease-out">
 	<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-blue-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out">
 		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-500 mb-4 shadow-inner">
@@ -3913,7 +3901,7 @@ const HTML_TEMPLATES = {
 </div>
 <div id="online-counter-warning-modal" class="fixed inset-0 z-[87] flex items-center justify-center p-4 bg-black/60  opacity-0 pointer-events-none transition-all duration-300 ease-out">
 	<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-red-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out">
-		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900/30 text-red-500 mb-4 shadow-inner">
+		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 mb-4 shadow-inner">
 			<svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 		</div>
 		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">هشدار شمارنده آنلاین</h3>
@@ -4347,14 +4335,15 @@ const HTML_TEMPLATES = {
 	</div>
 </div><div id="support-modal" class="fixed inset-0 z-[105] flex items-center justify-center p-4 bg-black/60 opacity-0 pointer-events-none transition-all duration-300 ease-out">
 	<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-red-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out">
-		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900/30 text-red-500 mb-4 shadow-inner">
-			<svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+		<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 mb-4 shadow-inner">
+			<svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+				<path d="M16.7 13.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 .1-.2-.3-.8-.9-1-1.1-.2-.2-.1-.4 0-.5.1-.1.3-.4.4-.6.1-.2.1-.4.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.3-.6-.6-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.4.7.3 1.3.6 1.7.7.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3z"/>
+				<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"/>
 			</svg>
 		</div>
-		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-3">سپاس از همراهی شما</h3>
+		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-3">پیام تشکر در واتساپ</h3>
 		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">ممنون که از MJ Panel استفاده می‌کنید. همین همراهی شما برای ادامه کار کافی است.</p>
-		<button onclick="toggleSupportModal(false)" class="w-full py-3 bg-transparent text-red-500 hover:text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:text-red-300 dark:hover:bg-red-900/20 font-bold rounded-md text-sm transition duration-300">متشکرم</button>
+		<a href="https://wa.me/971557256658?text=%D8%B3%D9%84%D8%A7%D9%85%20MJ%2C%20%D9%85%D9%85%D9%86%D9%88%D9%86%20%D8%A7%D8%B2%20%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C%20%D9%88%20%D8%B2%D8%AD%D9%85%D8%A7%D8%AA%D8%AA.%20%D9%81%D9%82%D8%B7%20%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%D9%85%20%D8%AA%D8%B4%DA%A9%D8%B1%20%DA%A9%D9%86%D9%85." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3 bg-transparent border-2 border-green-600 text-green-700 hover:bg-green-900/20 hover:text-green-800 dark:border-green-500 dark:text-green-500 dark:hover:bg-green-900/40 dark:hover:text-green-400 font-bold rounded-md text-sm transition duration-300">پیام تشکر در واتساپ</a>
 	</div>
 </div><div id="settings-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60  opacity-0 pointer-events-none transition-all duration-300 ease-out">
 		<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-gray-200 dark:border-amoled-border rounded-md shadow-xl overflow-hidden transition-all transform duration-300 opacity-0 scale-95 ease-out flex flex-col max-h-[90vh]">
@@ -5946,7 +5935,6 @@ function downloadMjSource() {
 }
 		function closeUsageWarning() { setModalState('usage-warning-modal', false); }
 		function openUsageWarning() { setModalState('usage-warning-modal', true); }
-		function closePersonalPanelWarning() { setModalState('personal-panel-warning-modal', false); }
 		function closeOnlineCounterWarning() { setModalState('online-counter-warning-modal', false); }
 		function openOnlineCounterWarning() { setModalState('online-counter-warning-modal', true); }
 		function closeConfigCountWarning() { setModalState('config-count-warning-modal', false); }
@@ -6861,14 +6849,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			}, 36000000);
 
-			setTimeout(() => {
-   			 const personalModal = document.getElementById('personal-panel-warning-modal');
-				const personalCard = personalModal.querySelector('div');
-				personalModal.classList.remove('opacity-0', 'pointer-events-none');
-				personalModal.classList.add('opacity-100', 'pointer-events-auto');
-				personalCard.classList.remove('opacity-0', 'scale-95');
-				personalCard.classList.add('opacity-100', 'scale-100');
-			}, 23000);
 			const versionBadge = document.getElementById('panel-version');
 			if (versionBadge) versionBadge.innerText = 'v' + CURRENT_VERSION;
 			renderPortCheckboxes();
@@ -6918,7 +6898,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (e.target.id === 'token-modal') toggleTokenModal(false);
 				if (e.target.id === 'qr-modal') toggleQrModal(false);
 				if (e.target.id === 'usage-warning-modal') closeUsageWarning();
-				if (e.target.id === 'personal-panel-warning-modal') closePersonalPanelWarning();
 				if (e.target.id === 'online-counter-warning-modal') closeOnlineCounterWarning();
 				if (e.target.id === 'config-count-warning-modal') closeConfigCountWarning();
 				if (e.target.id === 'global-message-modal') {
@@ -7315,7 +7294,7 @@ window.addEventListener('click', (e) => {
 			<div class="inline-flex items-center justify-center p-3 bg-blue-950/60 border border-blue-500 text-blue-400 rounded-md mb-4 shadow-[0_0_15px_rgba(59,130,246,0.4)]">
 				<svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
 			</div>
-			<h1 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-1">پنل زئــوس - وضعیت اشتراک</h1>
+			<h1 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-1">پنل MJ - وضعیت اشتراک</h1>
 			<p id="display-username" class="text-sm font-bold text-blue-500 tracking-wide font-mono mb-2"></p>
 			<p id="display-flag" class="text-2xl font-bold tracking-wide mb-3" style="display:none;"></p>
 			<div id="live-connections-badge" style="display: none !important;">
@@ -7490,7 +7469,7 @@ window.addEventListener('click', (e) => {
 			<svg class="w-5 h-5 group-hover:scale-110 transition" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 				<path d="M12.04 2C6.57 2 2.12 6.35 2.12 11.7c0 1.9.57 3.76 1.64 5.35L2 22l5.18-1.62a9.8 9.8 0 0 0 4.86 1.23h.01c5.47 0 9.92-4.35 9.92-9.7C21.97 6.35 17.52 2 12.04 2Zm5.72 13.73c-.24.68-1.4 1.28-1.92 1.34-.49.06-1.1.09-1.77-.11-.41-.13-.94-.3-1.62-.59-2.85-1.23-4.72-4.1-4.86-4.3-.14-.2-1.16-1.55-1.16-2.96s.74-2.1 1-2.39c.24-.29.52-.36.7-.36h.5c.16 0 .37-.06.58.44.22.53.74 1.83.8 1.96.07.13.1.29.02.48-.08.2-.12.33-.25.5-.12.16-.26.36-.37.48-.12.12-.24.26-.1.52.14.26.62 1.05 1.33 1.69.92.82 1.69 1.08 1.95 1.2.26.12.41.1.57-.06.16-.16.7-.8.89-1.06.19-.26.39-.22.65-.13.26.1 1.66.8 1.94.94.29.14.48.2.55.31.06.12.06.69-.18 1.36Z"/>
 			</svg>
-			پشتیبانی +971557256658
+			پیام در واتساپ
 		</a>
 	</div>
 </div>
@@ -7849,6 +7828,7 @@ const flagContainer = document.getElementById('display-flag');
 </body>
 </html>`,
 };
+
 
 
 
