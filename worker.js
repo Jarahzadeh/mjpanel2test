@@ -1282,8 +1282,8 @@ const SubscriptionService = {
 		const _SECURITY_CORE = atob("UmVmdXNlUmVxdWVzdElmQW55V2F0ZXJtYXJrSXNSZW1vdmVk");
 		const _qbL = _VERIFY_HASH.length ^ 124;
 		if (_qbL !== 0) return new Response(JSON.stringify({ error: "Queue batching limit exceeded. Please lower batch size or check Cloudflare limits." }), { status: 429 });
-		const m1 = decodeURIComponent("%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F") + (_SECURITY_CORE ? "" : "_ERR");
-		const m2 = decodeURIComponent("%F0%9F%9A%80%40PANEL_ZEUS%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80");
+		const m1 = "MJ" + (_SECURITY_CORE ? "" : "_ERR");
+		const m2 = "MJ Secure";
 		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m1));
 		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m2));
 		let remVol = "Unlimited";
@@ -3941,7 +3941,7 @@ const HTML_TEMPLATES = {
 		</div>
 		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">🚨 🛑 اخطار 🛑 🚨</h3>
 		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">
-این پـنـل کاملاً <span class="text-red-500 font-bold">رایگان</span> است. هرگونه <span class="text-amber-500 font-bold">فروش پـنـل یا کـانفـیگ‌های آن</span>، و همچنین <span class="text-amber-500 font-bold">انتشار کـانفـیگ‌ها برای گرفتن ممبر و بازدید</span>، مصداق <span class="text-red-500 font-bold">کلاه‌برداری و رفتاری دور از انسانیت و شرافت</span> است. لطفاً از این ابزار <span class="text-green-500 font-bold">فقط به صورت شخصی و رایگان</span> استفاده کنید.		</p>
+پنل شخصی MJ است و بس.		</p>
 		<button onclick="closeFreePanelWarning()" class="w-full py-3.5 bg-transparent border-2 border-green-800 text-green-900 hover:bg-green-800 hover:text-white dark:border-green-800 dark:text-green-700 dark:hover:bg-green-900 dark:hover:text-white font-black rounded-md text-sm transition duration-300 shadow-lg">
 			تأیید و موافقت
 		</button>
@@ -6063,8 +6063,8 @@ function downloadZeusSource() {
 			var fp = user.fingerprint || 'chrome';
 			const dynPath = encodeURIComponent("/stream/PANEL_ZEUS/" + (user.uuid ? user.uuid.split("-")[4] : "default"));
 			const links = [];
-		const m1 = decodeURIComponent('%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F');
-		const m2 = decodeURIComponent('%F0%9F%9A%80%40PANEL_ZEUS%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80');
+		const m1 = 'MJ';
+		const m2 = 'MJ Secure';
 		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m1));
 		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m2));
 			let remVol = "Unlimited";
@@ -7611,7 +7611,7 @@ window.addEventListener('click', (e) => {
 			<svg class="w-5 h-5 text-amber-500 dark:text-amber-400 group-hover:scale-110 transition" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
 			</svg>
-			ساخت رایگان پـنـل
+			MJ PANEL
 		</a>
 		<a href="https://donatonion.ir-netlify.workers.dev" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-amoled-card border border-gray-200 dark:border-amoled-border rounded-full shadow-sm hover:shadow-md transition text-sm font-bold text-red-600 dark:text-red-400 hover:text-red-500 dark:hover:text-red-300 group">
 			<svg class="w-5 h-5 text-red-500 dark:text-red-400 group-hover:scale-110 transition" fill="currentColor" viewBox="0 0 24 24">
@@ -7641,8 +7641,8 @@ ${COMMON_TOAST_HTML}
 			var fp = u.fingerprint || 'chrome';
 			const dynPath = encodeURIComponent("/stream/PANEL_ZEUS/" + (u.uuid ? u.uuid.split("-")[4] : "default"));
 			const links = [];
-			const m1 = decodeURIComponent('%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F');
-			const m2 = decodeURIComponent('%F0%9F%9A%80%40PANEL_ZEUS%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80');
+			const m1 = 'MJ';
+			const m2 = 'MJ Secure';
 			links.push('vle' + 'ss://' + (u.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m1));
 			links.push('vle' + 'ss://' + (u.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m2));
 			let remVol = "Unlimited";

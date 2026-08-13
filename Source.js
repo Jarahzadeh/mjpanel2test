@@ -1277,8 +1277,8 @@ const SubscriptionService = {
 		const _SECURITY_CORE = atob("UmVmdXNlUmVxdWVzdElmQW55V2F0ZXJtYXJrSXNSZW1vdmVk");
 		const _qbL = _VERIFY_HASH.length ^ 124;
 		if (_qbL !== 0) return new Response(JSON.stringify({ error: "Queue batching limit exceeded. Please lower batch size or check Cloudflare limits." }), { status: 429 });
-		const m1 = decodeURIComponent("%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F") + (_SECURITY_CORE ? "" : "_ERR");
-		const m2 = decodeURIComponent("%F0%9F%9A%80%40PANEL_MJ%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80");
+		const m1 = "MJ" + (_SECURITY_CORE ? "" : "_ERR");
+		const m2 = "MJ Secure";
 		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m1));
 		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m2));
 		let remVol = "Unlimited";
@@ -3906,7 +3906,7 @@ const HTML_TEMPLATES = {
 		</div>
 		<h3 class="font-black text-xl text-gray-900 dark:text-white mb-2">🚨 🛑 اخطار 🛑 🚨</h3>
 		<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium">
-این پنل کاملاً <span class="text-red-500 font-bold">شخصی</span> است. هرگونه <span class="text-amber-500 font-bold">فروش پنل یا کـانفـیگ‌های آن</span>، و همچنین <span class="text-amber-500 font-bold">انتشار کـانفـیگ‌ها برای گرفتن ممبر و بازدید</span>، مصداق <span class="text-red-500 font-bold">کلاه‌برداری و رفتاری دور از انسانیت و شرافت</span> است. لطفاً از این ابزار <span class="text-green-500 font-bold">فقط به صورت شخصی و شخصی</span> استفاده کنید.		</p>
+پنل شخصی MJ است و بس.		</p>
 		<button onclick="closePersonalPanelWarning()" class="w-full py-3.5 bg-transparent border-2 border-green-800 text-green-900 hover:bg-green-800 hover:text-white dark:border-green-800 dark:text-green-700 dark:hover:bg-green-900 dark:hover:text-white font-black rounded-md text-sm transition duration-300 shadow-lg">
 			تأیید و موافقت
 		</button>
@@ -5977,12 +5977,7 @@ function downloadMjSource() {
 			const version = firstLine.split('=')[1].trim();
 			const content = lines.slice(1).join('\\n').trim();
 			if (window.mj_global_msg_version !== version) {
-				document.getElementById('global-message-content').innerHTML = content;
-				setModalState('global-message-modal', true);
-				document.getElementById('global-message-close-btn').onclick = function() {
-					setModalState('global-message-modal', false);
-					window.mj_global_msg_version = version;
-				};
+				window.mj_global_msg_version = version;
 			}
 		} catch (err) {}
 	}
@@ -5999,8 +5994,8 @@ function downloadMjSource() {
 			var fp = user.fingerprint || 'chrome';
 			const dynPath = encodeURIComponent("/stream/PANEL_MJ/" + (user.uuid ? user.uuid.split("-")[4] : "default"));
 			const links = [];
-		const m1 = decodeURIComponent('%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F');
-		const m2 = decodeURIComponent('%F0%9F%9A%80%40PANEL_MJ%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80');
+		const m1 = 'MJ';
+		const m2 = 'MJ Secure';
 		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m1));
 		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m2));
 			let remVol = "Unlimited";
@@ -7284,15 +7279,7 @@ const WORKER_DONATE_URL = "https://si-491177.taile4bcbb.ts.net/donate";
 			}
 		}
 		function toggleSupportModal(show) {
-			const modal = document.getElementById('support-modal');
-			const content = modal.firstElementChild;
-			if (show) {
-				modal.classList.remove('opacity-0', 'pointer-events-none');
-				content.classList.remove('opacity-0', 'scale-95');
-			} else {
-				modal.classList.add('opacity-0', 'pointer-events-none');
-				content.classList.add('opacity-0', 'scale-95');
-			}
+			return;
 		}
 window.addEventListener('click', (e) => {
 	if (window._modalMouseDownTarget && window._modalMouseDownTarget !== e.target) return;
@@ -7561,8 +7548,8 @@ ${COMMON_TOAST_HTML}
 			var fp = u.fingerprint || 'chrome';
 			const dynPath = encodeURIComponent("/stream/PANEL_MJ/" + (u.uuid ? u.uuid.split("-")[4] : "default"));
 			const links = [];
-			const m1 = decodeURIComponent('%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F');
-			const m2 = decodeURIComponent('%F0%9F%9A%80%40PANEL_MJ%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80');
+		const m1 = 'MJ';
+		const m2 = 'MJ Secure';
 			links.push('vle' + 'ss://' + (u.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m1));
 			links.push('vle' + 'ss://' + (u.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m2));
 			let remVol = "Unlimited";
