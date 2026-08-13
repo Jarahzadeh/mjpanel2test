@@ -205,6 +205,26 @@ This panel was originally conceptualized and authored by Arad and Morgan. The cu
 * **Original Authors:** The baseline concept and initial framework belong to [AG-Morgan](https://github.com/AG-Morgan) and [aradava](https://github.com/aradava).
 * **Current Maintainer:** The system upgrades, advanced network capabilities, UI redesign, and automated deployment infrastructure have been developed and maintained by [PANEL_MJ](#).
 
+---
+
+## D1 Setup
+
+This Worker expects a D1 binding named `DB`.
+
+If you want the repository to create and wire the database for you during setup, run:
+
+```powershell
+.\setup-d1.ps1
+```
+
+You can also pass a custom database name:
+
+```powershell
+.\setup-d1.ps1 -DatabaseName "my-panel-db"
+```
+
+The script creates the D1 database with Wrangler, writes the `DB` binding into `wrangler.toml`, and then you can deploy normally.
+
 
 
 
